@@ -227,7 +227,7 @@ st.write("**10 best cities having best quality of life score**")
 st.dataframe(qlif1)
 qlif2=qlife[['City','Quality of Life']].sort_values(by = 'Quality of Life',
                             ascending = True).head(10).set_index('City').style.background_gradient(cmap = 'Reds')
-st.write("**10 worst cities having best quality of life score**")
+st.write("**10 worst cities having low quality of life score**")
 st.dataframe(qlif2)
 qlif3=qlife[['City','Crime Rating']].sort_values(by = 'Crime Rating',
                             ascending = False).head(10).set_index('City').style.background_gradient(cmap = 'Reds')
